@@ -5,6 +5,9 @@ import java.util.concurrent.CyclicBarrier;
 
 public class CyclicBarrierSample {
 
+    public CyclicBarrierSample() {
+    }
+
     public static void main(String[] args) throws InterruptedException {
         CyclicBarrier cyclicBarrier = new CyclicBarrier(3);
 
@@ -34,5 +37,9 @@ public class CyclicBarrierSample {
             }
         }
     }
+
+}
+
+class Child extends CyclicBarrierSample {
 
 }
